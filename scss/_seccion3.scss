@@ -1,0 +1,50 @@
+@import "color";
+
+/*---------Seccion 3-----------*/
+@mixin grid3($garea){
+    background-color: $cl_dos;
+    grid-area: $garea;
+}
+
+.padre{
+    width: 95%;
+    padding: 30px;
+    display: grid;
+    place-content: center;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:10px;
+    grid-template-areas:
+    "burger cinepo pire"
+    "montagne starbucks kfc";
+    .hijo{
+        width: 100%;
+        height: 30vh;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px black solid;
+        &:hover{
+            opacity: .5;
+        }
+    }
+    .burger{
+        @include grid3(burger);
+    }
+    .cinepo{
+        @include grid3(cinepo);
+    }
+    .pire{
+        @include grid3(pire);
+    }
+    .montagne{
+        @include grid3(montagne);
+    }
+    .starbucks{
+        @include grid3(starbucks);
+    }
+    .kfc{
+        @include grid3(kfc);
+    }
+}

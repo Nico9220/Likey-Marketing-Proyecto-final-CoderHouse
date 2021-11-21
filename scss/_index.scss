@@ -1,0 +1,54 @@
+@import "color";
+@import "font";
+
+/*--------------index------------------------*/
+@mixin fotos (){
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    img{
+        width: 600px;
+        border-radius: 15px;
+        border: 2px $cl_uno solid;
+    }
+}
+
+.center{
+    @include fotos();
+}
+
+.side1{
+    font-family:$principal-font;
+    font-size: 1.2rem;
+    float: left;
+}
+
+.side2{
+    @include fotos();
+}
+
+.noti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    li{
+        padding: 10px;
+    }
+}
+
+.prop{
+    display: flex;
+    justify-content: center;
+}
+
+.ayuda1{
+    display: flex;
+    justify-content: center;
+}
+
+.ayuda{
+    border: 2px solid violet;
+    padding: 20px;
+    background-color: $cl_dos;
+    border-radius: 15px;
+}

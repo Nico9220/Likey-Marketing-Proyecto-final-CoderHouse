@@ -1,0 +1,28 @@
+@import "color";
+
+/*------------Sección 1: Servicios-----------*/
+@mixin fotosServ(){
+    display: flex;
+    img{
+        width: 50%;
+        margin: 20px;
+        border: 2px solid $cl_uno;
+        border-radius: 15px;
+    }
+}
+
+.fotoList2{
+    @include fotosServ();
+}
+
+.margen{
+    margin: 20px;
+}
+
+.fotoList3{
+    @include fotosServ();
+}
+
+.fotoList4{
+    @include fotosServ();
+}

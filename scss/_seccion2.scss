@@ -1,0 +1,95 @@
+@import "color";
+@import "font";
+
+/*-------------Sección 2: Nosotros------------*/
+@mixin grid($grid){
+    font-family:$principal-font;
+    font-size: 1.3rem;
+    background-color: $cl_tres;
+    grid-area: $grid;
+}
+
+@mixin grid2($area){
+    background-color: $cl_tres;
+    grid-area: $area;
+}
+
+.nosotros{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "likey likey"
+    "equipo metas";
+}
+
+.noso3{
+    width: 100%;
+    height: 30vh;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    &:hover{
+        background-color: $cl_uno;
+        opacity: .5;
+        color: white;
+    }
+}
+
+.likey{
+    @include grid(likey);
+}
+
+.equipo{
+    @include grid(equipo);
+}
+
+.metas{
+    @include grid(metas);
+}
+
+.centerTitle{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/*---------Sección 2: Nuestros valores-----------*/
+
+.nuestros{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "inno resul empa";
+}
+
+.secc{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    border: 1px black solid;
+    &:hover{
+        background-color:$cl_uno;
+        opacity: .5;
+        color: white;
+    }
+}
+
+.inno{
+    @include grid2(inno);
+}
+
+.resul{
+    @include grid2(resul);
+}
+
+.empa{
+    @include grid2(empa);
+}

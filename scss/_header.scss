@@ -1,0 +1,11 @@
+@import "color";
+
+/*----------------Header----------------*/
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    .nav-link{
+        margin-right: 30px;
+    }
+}

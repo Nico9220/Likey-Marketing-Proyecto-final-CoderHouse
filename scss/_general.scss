@@ -1,0 +1,75 @@
+@import "color";
+@import "font";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f0c4;
+    background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 74%);
+    overflow-x: hidden;
+}
+
+h1{
+    color: $cl_uno;
+    font-family:$principal-font;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #867AE9;
+    font-family: $principal-font;
+}
+
+h3{
+    color:#726A95;
+    text-decoration: underline;
+    font-family: $principal-font;
+    padding: 20px;
+}
+
+.menu{
+    font-style: normal;
+}
+
+.bol{
+    font-weight: bold;
+}
+
+ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin: 20px;
+}
+
+ol{
+    font-family: $principal-font;
+}
+
+.form{
+    color: #726A95 ;
+    background-color: #FF94CC;
+}
+
+p{
+    padding: 10px;
+}
+
+.nuestrasRedes{
+    padding: 20px;
+}
+
+.btn{
+    background-color: $cl_uno;
+    border: $cl_uno solid 1px;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: $cl_uno;
+    }
+}
+

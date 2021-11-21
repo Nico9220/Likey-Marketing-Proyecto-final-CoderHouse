@@ -1,0 +1,25 @@
+/*----------FOOTER-----------*/
+
+footer{
+    background-color: #A239EA;
+    h3{
+        color:$cl_dos ;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 0;
+        padding: 5px;
+        &:hover{
+            opacity: .5;
+        }
+    }
+}
